@@ -1,15 +1,21 @@
 import React, { useState } from "react";
 import Speedometer from "./Speedometer";
 import MyTable from "./MyTable";
+import Navbar from "./Navbar"
+import Sidenav from "./Sidenav";
+import Appbar from "./Appbar";
 
 const App = () => {
   const [value, setValue] = useState(0); // Current value for the gauge
   const maxValue = 200; // Maximum value for the speedometer
 
   return (
-    <><h1>Table Data</h1>
-     
-      <MyTable /></>
+    <>
+      <Navbar />
+      <Appbar/>
+      {/* <Sidenav/> */}
+      {/* <MyTable /> */}
+    </>
   );
 };
 
