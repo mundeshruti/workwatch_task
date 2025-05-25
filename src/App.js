@@ -4,6 +4,7 @@ import MyTable from "./MyTable";
 import Navbar from "./Navbar"
 import Sidenav from "./Sidenav";
 import Appbar from "./Appbar";
+import DataGridPremiumDemo from "./DataGridPremiumDemo";
 
 const App = () => {
   const [value, setValue] = useState(0); // Current value for the gauge
@@ -12,7 +13,8 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Appbar/>
+      <Appbar />
+      <DataGridPremiumDemo />
       {/* <Sidenav/> */}
       {/* <MyTable /> */}
     </>
