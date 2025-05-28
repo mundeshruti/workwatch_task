@@ -5,10 +5,11 @@ import Navbar from "./Navbar"
 import Sidenav from "./Sidenav";
 import Appbar from "./Appbar";
 import DataGridPremiumDemo from "./DataGridPremiumDemo";
+import GridToolbar from "./GridToolbar";
 
 const App = () => {
-  const [value, setValue] = useState(0); // Current value for the gauge
-  const maxValue = 200; // Maximum value for the speedometer
+  // const [value, setValue] = useState(0); // Current value for the gauge
+  // const maxValue = 200; // Maximum value for the speedometer
 
   return (
     <>
@@ -17,6 +18,7 @@ const App = () => {
       <DataGridPremiumDemo />
       {/* <Sidenav/> */}
       {/* <MyTable /> */}
+      <GridToolbar />
     </>
   );
 };
