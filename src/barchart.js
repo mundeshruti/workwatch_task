@@ -7,43 +7,51 @@ import DownloadPNG from './DownloadPNG';
 
 // import { HighlightedCode } from '@mui/docs/HighlightedCode';
 
-const barChartsParams = {
-    series: [
-        {
-            id: 'series-1',
-            data: [3, 4, 1, 6, 5],
-            label: 'A',
-            stack: 'total',
-            highlightScope: {
-                highlight: 'item',
-            },
-        },
-        {
-            id: 'series-2',
-            data: [4, 3, 1, 5, 8],
-            label: 'B',
-            stack: 'total',
-            highlightScope: {
-                highlight: 'item',
-            },
-        },
-        {
-            id: 'series-3',
-            data: [4, 2, 5, 4, 1],
-            label: 'C',
-            highlightScope: {
-                highlight: 'item',
-            },
-        },
-    ],
-    xAxis: [{ data: ['0', '3', '6', '9', '12'], id: 'axis1' }],
-    height: 400,
-};
-
 export default function BarClick() {
     const [itemData, setItemData] = React.useState();
     const [axisData, setAxisData] = React.useState();
     const chartRef = React.useRef(null);
+    //  const COLORS = ['#6A5ACD', '#A9A9A9', '#BDB76B']; // SlateBlue, DarkGray, Khaki
+      const COLORS = ['#1976D2', '#64B5F6', '#81C784', '#4CAF50', '#FFC107', '#FF7043'];
+    //   const COLORS = ['#0D47A1', '#1565C0', '#1976D2', '#1E88E5', '#2196F3', '#42A5F5'];
+    //  const COLORS = ['#0072B2', '#E69F00', '#56B4E9', '#009E73', '#F0E442', '#D55E00'];
+    // const COLORS = ['#6A5ACD', '#A9A9A9', '#BDB76B', '#4682B4', '#708090', '#9ACD32'];
+
+    const barChartsParams = {
+        series: [
+            {
+                id: 'series-1',
+                data: [3, 4, 1, 6, 5],
+                label: 'A',
+                stack: 'total',
+                color: COLORS[0],
+                highlightScope: {
+                    highlight: 'item',
+                },
+            },
+            {
+                id: 'series-2',
+                data: [4, 3, 1, 5, 8],
+                label: 'B',
+                stack: 'total',
+                color: COLORS[1],
+                highlightScope: {
+                    highlight: 'item',
+                },
+            },
+            {
+                id: 'series-3',
+                data: [4, 2, 5, 4, 1],
+                label: 'C',
+                color: COLORS[2],
+                highlightScope: {
+                    highlight: 'item',
+                },
+            },
+        ],
+        xAxis: [{ data: ['0', '3', '6', '9', '12'], id: 'axis1' }],
+        height: 400,
+    };
 
     return (
 
