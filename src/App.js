@@ -1,11 +1,8 @@
-import React, { useState } from "react";
-import Speedometer from "./Speedometer";
-import MyTable from "./MyTable";
-import Navbar from "./Navbar"
-import Sidenav from "./Sidenav";
 import Appbar from "./Appbar";
+import BarClick from "./barchart";
 import DataGridPremiumDemo from "./DataGridPremiumDemo";
 import GridToolbar from "./GridToolbar";
+import Navbar from "./Navbar";
 
 const App = () => {
   // const [value, setValue] = useState(0); // Current value for the gauge
@@ -19,6 +16,8 @@ const App = () => {
       {/* <Sidenav/> */}
       {/* <MyTable /> */}
       <GridToolbar />
+      <BarClick />
+      {/* <Dashboard/> */}
     </>
   );
 };
